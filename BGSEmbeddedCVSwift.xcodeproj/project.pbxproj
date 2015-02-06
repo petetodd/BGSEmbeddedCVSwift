@@ -14,6 +14,8 @@
 		D05C918D1A82790300A0D60E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05C918C1A82790300A0D60E /* Images.xcassets */; };
 		D05C91901A82790300A0D60E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D05C918E1A82790300A0D60E /* LaunchScreen.xib */; };
 		D05C919C1A82790300A0D60E /* BGSEmbeddedCVSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C919B1A82790300A0D60E /* BGSEmbeddedCVSwiftTests.swift */; };
+		D05C91A61A827FA100A0D60E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C91A51A827FA100A0D60E /* CollectionViewCell.swift */; };
+		D05C91A81A82804A00A0D60E /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C91A71A82804A00A0D60E /* ViewController2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		D05C91951A82790300A0D60E /* BGSEmbeddedCVSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BGSEmbeddedCVSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05C919A1A82790300A0D60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05C919B1A82790300A0D60E /* BGSEmbeddedCVSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BGSEmbeddedCVSwiftTests.swift; sourceTree = "<group>"; };
+		D05C91A51A827FA100A0D60E /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		D05C91A71A82804A00A0D60E /* ViewController2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,8 @@
 				D05C918E1A82790300A0D60E /* LaunchScreen.xib */,
 				D05C91841A82790300A0D60E /* BGSEmbeddedCVSwift.xcdatamodeld */,
 				D05C91801A82790300A0D60E /* Supporting Files */,
+				D05C91A51A827FA100A0D60E /* CollectionViewCell.swift */,
+				D05C91A71A82804A00A0D60E /* ViewController2.swift */,
 			);
 			path = BGSEmbeddedCVSwift;
 			sourceTree = "<group>";
@@ -215,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D05C91A81A82804A00A0D60E /* ViewController2.swift in Sources */,
 				D05C91881A82790300A0D60E /* ViewController.swift in Sources */,
 				D05C91831A82790300A0D60E /* AppDelegate.swift in Sources */,
+				D05C91A61A827FA100A0D60E /* CollectionViewCell.swift in Sources */,
 				D05C91861A82790300A0D60E /* BGSEmbeddedCVSwift.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
