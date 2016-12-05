@@ -1,20 +1,17 @@
 //
-//  ViewController.swift
+//  StoryBoardCVC.swift
 //  BGSEmbeddedCVSwift
 //
-//  Created by Peter Todd Air on 04/02/2015.
-//  Copyright (c) 2015 Bright Green Star. All rights reserved.
+//  Created by Peter Todd Air on 05/12/2016.
+//  Copyright © 2016 Bright Green Star. All rights reserved.
 //
-// REF: http://stackoverflow.com/questions/28325277/how-to-set-cell-spacing-and-uicollectionview-uicollectionviewflowlayout-size-r/28327193#28327193
-
 
 import UIKit
 
+private let reuseIdentifier = "Cell"
 
-class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICollectionViewDataSource {
-    
-    
-    var collectionView : UICollectionView?  // Optional
+class StoryBoardCVC: UICollectionViewController {
+
     var screenSize : CGRect!
     var screenWidth : CGFloat!
     var screenHeight : CGFloat!
@@ -22,9 +19,9 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    //    screenSize = UIScreen.mainScreen().bounds
+        //    screenSize = UIScreen.mainScreen().bounds
         screenSize = self.view.frame
-
+        
         screenWidth = screenSize.width
         screenHeight = screenSize.height
         
@@ -43,11 +40,11 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         self.view.addSubview(collectionView!)
     }
     
-    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    override func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
         return 1
     }
     
-    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+    override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 20
     }
     
@@ -57,10 +54,10 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
             return CGSize(width: screenWidth, height: screenWidth/3)
         }
         return CGSize(width: screenWidth/3, height: screenWidth/3);
-
+        
     }
     
-    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
+    override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("CollectionViewCell", forIndexPath: indexPath) as! CollectionViewCell
         if indexPath.row == 0
         {
@@ -71,18 +68,11 @@ class ViewController: UIViewController, UICollectionViewDelegateFlowLayout, UICo
         }
         cell.layer.borderColor = UIColor.blackColor().CGColor
         cell.layer.borderWidth = 0.5
-
-    //    println(cell.frame.size.width)
-
+        
+        //    println(cell.frame.size.width)
+        
         cell.textLabel?.text = "\(indexPath.section):\(indexPath.row)"
         return cell
     }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    
+
 }

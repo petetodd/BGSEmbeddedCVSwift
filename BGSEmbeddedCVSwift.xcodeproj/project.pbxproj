@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D01666911DF5E2E0005083D8 /* StoryBoardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01666901DF5E2E0005083D8 /* StoryBoardCVC.swift */; };
 		D05C91831A82790300A0D60E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C91821A82790300A0D60E /* AppDelegate.swift */; };
 		D05C91861A82790300A0D60E /* BGSEmbeddedCVSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D05C91841A82790300A0D60E /* BGSEmbeddedCVSwift.xcdatamodeld */; };
 		D05C91881A82790300A0D60E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C91871A82790300A0D60E /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D01666901DF5E2E0005083D8 /* StoryBoardCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoardCVC.swift; sourceTree = "<group>"; };
 		D05C917D1A82790300A0D60E /* BGSEmbeddedCVSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGSEmbeddedCVSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05C91811A82790300A0D60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05C91821A82790300A0D60E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				D05C91801A82790300A0D60E /* Supporting Files */,
 				D05C91A51A827FA100A0D60E /* CollectionViewCell.swift */,
 				D05C91A71A82804A00A0D60E /* ViewController2.swift */,
+				D01666901DF5E2E0005083D8 /* StoryBoardCVC.swift */,
 			);
 			path = BGSEmbeddedCVSwift;
 			sourceTree = "<group>";
@@ -170,9 +173,12 @@
 				TargetAttributes = {
 					D05C917C1A82790300A0D60E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = PF4KKY2P56;
+						LastSwiftMigration = 0810;
 					};
 					D05C91941A82790300A0D60E = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = D05C917C1A82790300A0D60E;
 					};
 				};
@@ -222,6 +228,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D05C91A81A82804A00A0D60E /* ViewController2.swift in Sources */,
+				D01666911DF5E2E0005083D8 /* StoryBoardCVC.swift in Sources */,
 				D05C91881A82790300A0D60E /* ViewController.swift in Sources */,
 				D05C91831A82790300A0D60E /* AppDelegate.swift in Sources */,
 				D05C91A61A827FA100A0D60E /* CollectionViewCell.swift in Sources */,
@@ -350,9 +357,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PF4KKY2P56;
 				INFOPLIST_FILE = BGSEmbeddedCVSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -360,9 +369,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PF4KKY2P56;
 				INFOPLIST_FILE = BGSEmbeddedCVSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Release;
 		};
@@ -381,6 +392,7 @@
 				INFOPLIST_FILE = BGSEmbeddedCVSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BGSEmbeddedCVSwift.app/BGSEmbeddedCVSwift";
 			};
 			name = Debug;
@@ -396,6 +408,7 @@
 				INFOPLIST_FILE = BGSEmbeddedCVSwiftTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 2.3;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BGSEmbeddedCVSwift.app/BGSEmbeddedCVSwift";
 			};
 			name = Release;
@@ -419,6 +432,7 @@
 				D05C91A11A82790300A0D60E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D05C91A21A82790300A0D60E /* Build configuration list for PBXNativeTarget "BGSEmbeddedCVSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -427,6 +441,7 @@
 				D05C91A41A82790300A0D60E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
