@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D01666911DF5E2E0005083D8 /* StoryBoardCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D01666901DF5E2E0005083D8 /* StoryBoardCVC.swift */; };
+		D01666941DF5EA25005083D8 /* demo1.png in Resources */ = {isa = PBXBuildFile; fileRef = D01666931DF5EA25005083D8 /* demo1.png */; };
 		D05C91831A82790300A0D60E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C91821A82790300A0D60E /* AppDelegate.swift */; };
 		D05C91861A82790300A0D60E /* BGSEmbeddedCVSwift.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D05C91841A82790300A0D60E /* BGSEmbeddedCVSwift.xcdatamodeld */; };
 		D05C91881A82790300A0D60E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05C91871A82790300A0D60E /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		D01666901DF5E2E0005083D8 /* StoryBoardCVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoardCVC.swift; sourceTree = "<group>"; };
+		D01666931DF5EA25005083D8 /* demo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo1.png; sourceTree = "<group>"; };
 		D05C917D1A82790300A0D60E /* BGSEmbeddedCVSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BGSEmbeddedCVSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05C91811A82790300A0D60E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D05C91821A82790300A0D60E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D01666921DF5E9E8005083D8 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D01666931DF5EA25005083D8 /* demo1.png */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		D05C91741A82790300A0D60E = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		D05C917F1A82790300A0D60E /* BGSEmbeddedCVSwift */ = {
 			isa = PBXGroup;
 			children = (
+				D01666921DF5E9E8005083D8 /* Assets */,
 				D05C91821A82790300A0D60E /* AppDelegate.swift */,
 				D05C91871A82790300A0D60E /* ViewController.swift */,
 				D05C91891A82790300A0D60E /* Main.storyboard */,
@@ -209,6 +220,7 @@
 			files = (
 				D05C918B1A82790300A0D60E /* Main.storyboard in Resources */,
 				D05C91901A82790300A0D60E /* LaunchScreen.xib in Resources */,
+				D01666941DF5EA25005083D8 /* demo1.png in Resources */,
 				D05C918D1A82790300A0D60E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
